@@ -41,4 +41,4 @@ The frontend app relies on the following npm packages:
   - tailwindcss: A utility-first CSS framework used for styling.
 
 ## Deployed APP
-[StaySpot](https://stayspot.netlify.app/)
+[StaySpot](https://stayspot-booking-app-kannan.netlify.app/)

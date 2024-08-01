@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import {BrowserRouter} from "react-router-dom"
 import axios from "axios";
 
-axios.defaults.baseURL = 'http://localhost:4000'
+axios.defaults.baseURL = 'https://stayspot-backend-cd17.onrender.com'
 axios.defaults.withCredentials = true
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
