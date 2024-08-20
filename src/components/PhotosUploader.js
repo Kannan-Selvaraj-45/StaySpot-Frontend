@@ -70,7 +70,7 @@ export default function PhotosUploader({ addedPhotos, setAddedPhotos }) {
             <div className="h-32 flex relative" key={index}>
               <img
                 className="rounded-2xl h-32 w-full object-cover"
-                src={"https://stayspot-backend-cd17.onrender.com/uploads/" + link}
+                src={"https://stayspot-backend-cd17.onrender.com/uploads/" + {link}}
                 alt={link}
               />
               <button
