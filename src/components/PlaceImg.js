@@ -1,14 +1,16 @@
-baseURL = 'https://stayspot-backend-cd17.onrender.com'export default function PlaceImg({place, index=0, className=null}){
+const baseURL = 'https://stayspot-backend-cd17.onrender.com';
 
-    if (!place.photos?.length){
-        return ''
+export default function PlaceImg({ place, index = 0, className = null }) {
+    if (!place.photos?.length) {
+        return null;
     }
-    if(!className){
-        className = "w-full h-full rounded-xl sm:rounded-none object-cover"
-    }
+    const imgClassName = className || "w-full h-full rounded-xl sm:rounded-none object-cover";
+    
     return (
-        <>
-        <img className={className} src={"https://stayspot-backend-cd17.onrender.com/uploads/"+place.photos[index]} alt="" />             
-        </>
-    )
+        <img 
+            className={imgClassName} 
+            src={`${baseURL}/uploads/${place.photos[index]}`} 
+            alt="Place Image" 
+        />
+    );
 }
