@@ -35,7 +35,7 @@ export default function PlaceGallery({ place }) {
               <div key={index}>
                 <img
                   className="w-full"
-                  src={"http://localhost:4000/uploads/" + photo}
+                  src={"https://stayspot-backend-cd17.onrender.com/uploads/" + photo}
                   alt=""
                 />
               </div>
